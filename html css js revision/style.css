@@ -7,3 +7,26 @@ p{
     color: aqua;
     background-color: brown;
 }
+
+#hello{
+    background-color: black;
+    color: white;
+}
+
+.hi{
+    color: aliceblue;
+    background-color: slategrey;
+}
+
+
+#parent{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+}
+
+#child{
+    height: 50%;
+    width: 50%;
+    background-color: royalblue;
+}
