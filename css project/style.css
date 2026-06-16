@@ -44,3 +44,31 @@ nav a{
     opacity: 0.6;
     font-weight: 400;
 }
+
+section{
+    padding: 50px;
+}
+
+section .text1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.text1 h1{
+    font-size: 75px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section .text2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+   gap: 300px;
+}
+
+.text2 h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+
