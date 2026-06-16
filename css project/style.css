@@ -46,7 +46,7 @@ nav a{
 }
 
 section{
-    padding: 50px;
+    padding: 15px;
 }
 
 section .text1{
@@ -70,5 +70,22 @@ section .text2{
 .text2 h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
+}
+
+
+.image{
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    border-radius: 100px;
+    margin-right: 102px;
+    margin-bottom: 12px;
+        
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
