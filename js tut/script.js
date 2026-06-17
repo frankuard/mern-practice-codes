@@ -67,6 +67,11 @@ let maxInt = 9007199254740991n;
 // TERNARY
 
 12>13 ? console.log("true") : console.log("false");
+let score = 25
+
+let grade = score >=90 ? "A" : score >= 75 ? "B" : score>= 60 ? "C" : "Fail";
+
+console.log(grade)
 
 
 // INSTANCE OF 
@@ -78,4 +83,23 @@ console.log(a instanceof Array)
 console.log(a instanceof Object)
 
 console.log(a instanceof Set)
+
+
+// UNARY 
+
+let num  = 5;
+num++
+console.log(num)
+
+let num2 = 7
+++num2;
+console.log(num2)
+
+let x1 = 3;
+let y1 = x1++;
+console.log(x1,y1)
+
+let x2 = 3;
+let y2 = ++x2;
+console.log(x2,y2)
 
