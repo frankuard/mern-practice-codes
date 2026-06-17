@@ -138,3 +138,32 @@ function checkAge(age) {
 
 console.log(checkAge(12))
 console.log(checkAge(24))
+
+//  Empty one
+
+function f() {
+    return;
+}
+
+console.log(f());
+
+// HIGHER ORDER FUNCTION
+
+// function xyz(val) {
+    
+// }
+
+// xyz(function() {
+    
+// })
+
+// CLOSURE
+
+// function abcd() {
+//     let val = 0;
+//     return function () {
+//         console.log(val)
+//     }
+// }
+
+
