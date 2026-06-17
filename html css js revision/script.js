@@ -24,4 +24,5 @@ console.log(a%b)
 
 var nice = confirm("Are you dumb?")
 
+var something =prompt("give me a name")
 
