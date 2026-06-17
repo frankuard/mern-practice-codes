@@ -15,3 +15,12 @@ function testing() {
 
 testing()
 
+
+// Temporal Dead Zone
+
+// DISTANCE BETWEEN THE PRINT AND DECLARATION IS TDZ
+// IF YOU DO THIS WITH A VAR IT WILL GIVE YOU 'UNDEFINED'
+// console.log(a);
+// let a = 12;
+
+
