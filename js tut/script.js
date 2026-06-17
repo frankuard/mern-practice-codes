@@ -26,16 +26,34 @@ testing()
 
 // HOISITNG
 
-var a = undefined;
+// var a = undefined;
 
 // IN HOSIITING THE DECLARATION GIES UP AND INTIALZIATION GOES DOWN
-console.log(a);
 
-a = 12;
+// console.log(a);
 
-console.log(a);
+//a = 12;
+
+// console.log(a);
 
 "hositing is  undefined for var"
 "const and let hoist dosent have value it is error"
 
 
+// DATA TYPE SECTION
+
+// PRIMITIVES MA REAL VALUES KO REAL COPY
+// REFERENCE MA REAL KO DIDAINA COPY BUT REFERENCE DINCHA
+
+
+let a  = 12; // PRIMITIVE
+b = a; // REFERENCE
+
+let c = [1,2,3];
+let d = c;
+
+c.pop(); // REMOVING ANYTHING ON C WILL IMPACT D ASWELL BECAUSE IT IS REFERENCE ONE
+
+let we = null;  // INTIALIZING A NOTHING VALUE TO UPDATE LATER ON
+
+let us = undefined; // MAKING A VARIABLE AND NOT GIVING IT VALUE
