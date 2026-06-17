@@ -103,3 +103,26 @@ let x2 = 3;
 let y2 = ++x2;
 console.log(x2,y2)
 
+
+// THE ... OPERATOR 
+
+// THIS IS REST PARAMETERS
+
+
+function abcd(a,b,c, ...val) {
+    console.log(a,b,c,val)
+}
+
+abcd(1,2,3,4,5,6);
+
+
+function getScore(...scores) {
+    let total = 0;
+    scores.forEach(function (val) {
+         console.log(val)
+        total += val;
+    });
+    return total;
+}
+
+console.log(getScore(10,12,14,18));
