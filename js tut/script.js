@@ -20,7 +20,22 @@ testing()
 
 // DISTANCE BETWEEN THE PRINT AND DECLARATION IS TDZ
 // IF YOU DO THIS WITH A VAR IT WILL GIVE YOU 'UNDEFINED'
+
 // console.log(a);
 // let a = 12;
+
+// HOISITNG
+
+var a = undefined;
+
+// IN HOSIITING THE DECLARATION GIES UP AND INTIALZIATION GOES DOWN
+console.log(a);
+
+a = 12;
+
+console.log(a);
+
+"hositing is  undefined for var"
+"const and let hoist dosent have value it is error"
 
 
