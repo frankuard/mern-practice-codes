@@ -64,4 +64,18 @@ let maxInt = 9007199254740991n;
 
 
 
+// TERNARY
+
+12>13 ? console.log("true") : console.log("false");
+
+
+// INSTANCE OF 
+
+a = []
+
+console.log(a instanceof Array)
+
+console.log(a instanceof Object)
+
+console.log(a instanceof Set)
 
