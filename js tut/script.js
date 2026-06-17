@@ -167,3 +167,8 @@ console.log(f());
 // }
 
 
+// IIFE 
+
+(function () {
+    let score = 0 ;
+})();
