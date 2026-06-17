@@ -126,3 +126,15 @@ function getScore(...scores) {
 }
 
 console.log(getScore(10,12,14,18));
+
+
+// EARLY RETURN PATTERN
+
+function checkAge(age) {
+    
+    if (age<18) return "Too Young"; return "Allowed"
+
+}
+
+console.log(checkAge(12))
+console.log(checkAge(24))
