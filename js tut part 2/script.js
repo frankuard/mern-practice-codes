@@ -37,7 +37,25 @@ sel.addEventListener("change", function (dets) {
 })
 
 
+let h1 = document.querySelector("h1");
 
+// APPROACH
+
+window.addEventListener("keydown", function (dets) {
+    
+    console.log(dets)
+   
+
+    if (dets.key === ' '){
+        h1.textContent = "Space";
+
+    }
+    else{
+
+         h1.textContent = dets.key;
+    }
+
+})
 
 
 
