@@ -238,6 +238,11 @@ countries = ["Nepal",...countries]
 
 
 
+// COMPUTED PROPERTIES
+
+let role = "admin";
+
+
 let obj = {
     name: "roshan",
     age: 18,
@@ -245,6 +250,7 @@ let obj = {
     address:{
         city: "biratnagar"
     },
+    [role]: 'roshan'
 };
 
 // let obj2 = {...obj};
@@ -260,3 +266,7 @@ obj2.address.city = "Kathmandu";
 // OPTIONAL CHANING
 
 obj?.addresses?.city
+
+
+
+
