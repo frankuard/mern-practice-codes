@@ -24,4 +24,22 @@ p.addEventListener("click",function () {
 p.addEventListener("dblclick", function () {
     p.style.color = "yellow"
 })
+ 
+
+let sel= document.querySelector("select");
+
+let device = document.getElementById("device-selected")
+
+sel.addEventListener("change", function (dets) {
+    
+    console.log(dets.target.value);
+    device.textContent = `${dets.target.value} Device Selected`;
+})
+
+
+
+
+
+
+
 
