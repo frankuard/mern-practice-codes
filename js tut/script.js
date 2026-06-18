@@ -207,3 +207,9 @@ arr.forEach(function (val) {
 let newArr  = arr.map(function (val) {
     return 12;
 })
+
+ let ans = [1,2,3,4,5,6]
+
+ let newAns = ans.reduce(function (accumulator,val) {
+    return accumulator + val
+ },0);
