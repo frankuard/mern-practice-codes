@@ -66,5 +66,11 @@ btn.addEventListener("click", function () {
 })
 
 
+file.addEventListener("change", function (dets) {
+    
+    console.log(dets.target.files[0].name)
+    btn.textContent = dets.target.files[0].name
+})
+
 
 
