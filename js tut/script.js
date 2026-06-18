@@ -236,3 +236,23 @@ let p = [...m,...n]
 let countries = ["USA","UK"]
 countries = ["Nepal",...countries]
 
+
+
+let obj = {
+    name: "roshan",
+    age: 18,
+    email: "test@test.com",
+    address:{
+        city: "biratnagar"
+    },
+};
+
+// let obj2 = {...obj};
+// obj2.address.city = "Kathmandu";
+
+// NOTE :  IF AN OBJECT HAS NESTED VALUES THEN IT WONT BE CLONED BY SPREAD OPERATOR
+
+// DEEP CLONING
+
+let obj2 = JSON.parse(JSON.stringify(obj))
+obj2.address.city = "Kathmandu";
