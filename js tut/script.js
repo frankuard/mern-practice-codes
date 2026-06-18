@@ -197,19 +197,30 @@ console.log(f());
 // arr.reverse();
 
 
-let arr = [1,2,3,4,5,6,7,8,9,10]
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 arr.forEach(function (val) {
-    console.log(val +5)
+    console.log(val + 5)
 
 })
 
-let newArr  = arr.map(function (val) {
+let newArr = arr.map(function (val) {
     return 12;
 })
 
- let ans = [1,2,3,4,5,6]
+let ans = [1, 2, 3, 4, 5, 6]
 
- let newAns = ans.reduce(function (accumulator,val) {
+let newAns = ans.reduce(function (accumulator, val) {
     return accumulator + val
- },0);
+}, 0);
+
+
+
+// SPREAD OPERATOR
+
+let array1 = [1, 2, 3, 4, 5]
+
+let newArray  = [...array1]; // THIS IS USED TO COPY INSTEAD OF REFERENCE
+
+
+
