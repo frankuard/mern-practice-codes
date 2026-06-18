@@ -223,4 +223,16 @@ let array1 = [1, 2, 3, 4, 5]
 let newArray  = [...array1]; // THIS IS USED TO COPY INSTEAD OF REFERENCE
 
 
+// MERGING TWO ARRAY WITH SPREAD OPERATOR
+
+let m = [1,2];
+let n = [3,4];
+
+let p = [...m,...n]
+
+
+// ADD NEPAL TO THE START OF THIS ARRAY USING SPREAD
+
+let countries = ["USA","UK"]
+countries = ["Nepal",...countries]
 
