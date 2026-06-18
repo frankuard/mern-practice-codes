@@ -177,19 +177,33 @@ console.log(f());
 
 // ARRAYS
 
-let arr = [1, 2, 3, 4]
-arr.pop()
-arr.push(34)
+// let arr = [1, 2, 3, 4]
+// arr.pop()
+// arr.push(34)
 
-arr.shift();
-console.log(arr)
-arr.unshift(1);
-console.log(arr)
+// arr.shift();
+// console.log(arr)
+// arr.unshift(1);
+// console.log(arr)
 
-arr.splice(2, 2); // THIS CHANGES THE ORIGINAL ARRAY
-console.log(arr)
+// arr.splice(2, 2); // THIS CHANGES THE ORIGINAL ARRAY
+// console.log(arr)
 
 
-arr.slice(2, 1); // THIS DOES NOT CHANGE THE ORIGINAL ARRAY
-console.log(arr)
+// arr.slice(2, 1); // THIS DOES NOT CHANGE THE ORIGINAL ARRAY
+// console.log(arr)
 
+
+// arr.reverse();
+
+
+let arr = [1,2,3,4,5,6,7,8,9,10]
+
+arr.forEach(function (val) {
+    console.log(val +5)
+
+})
+
+let newArr  = arr.map(function (val) {
+    return 12;
+})
