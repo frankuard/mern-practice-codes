@@ -58,6 +58,13 @@ window.addEventListener("keydown", function (dets) {
 })
 
 
+let btn = document.querySelector("#btn")
+let file = document.querySelector("#file")
+
+btn.addEventListener("click", function () {
+    file.click();
+})
+
 
 
 
