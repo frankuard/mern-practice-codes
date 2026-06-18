@@ -10,3 +10,18 @@ console.log(a.getAttribute("href"))
 
 a.removeAttribute("href")
 
+
+let p = document.querySelector("p");
+
+
+// SINGLE CLICK
+p.addEventListener("click",function () {
+    p.style.color = "green"
+})
+
+// DOUBLE CLICK 
+
+p.addEventListener("dblclick", function () {
+    p.style.color = "yellow"
+})
+
