@@ -1,16 +1,16 @@
 
 function testing() {
-    
-    if (true){
+
+    if (true) {
         var a = 12; // Var is function scoped
         let b = 15; // Let is block scoped
         const c = 14; // const is function scoped
-        
-         console.log(b)
-         console.log(c)
+
+        console.log(b)
+        console.log(c)
     }
-    console.log(a)  
-   
+    console.log(a)
+
 }
 
 testing()
@@ -46,10 +46,10 @@ testing()
 // REFERENCE MA REAL KO DIDAINA COPY BUT REFERENCE DINCHA
 
 
-let a  = 12; // PRIMITIVE
+let a = 12; // PRIMITIVE
 b = a; // REFERENCE
 
-let c = [1,2,3];
+let c = [1, 2, 3];
 let d = c;
 
 c.pop(); // REMOVING ANYTHING ON C WILL IMPACT D ASWELL BECAUSE IT IS REFERENCE ONE
@@ -66,10 +66,10 @@ let maxInt = 9007199254740991n;
 
 // TERNARY
 
-12>13 ? console.log("true") : console.log("false");
+12 > 13 ? console.log("true") : console.log("false");
 let score = 25
 
-let grade = score >=90 ? "A" : score >= 75 ? "B" : score>= 60 ? "C" : "Fail";
+let grade = score >= 90 ? "A" : score >= 75 ? "B" : score >= 60 ? "C" : "Fail";
 
 console.log(grade)
 
@@ -87,7 +87,7 @@ console.log(a instanceof Set)
 
 // UNARY 
 
-let num  = 5;
+let num = 5;
 num++
 console.log(num)
 
@@ -97,11 +97,11 @@ console.log(num2)
 
 let x1 = 3;
 let y1 = x1++;
-console.log(x1,y1)
+console.log(x1, y1)
 
 let x2 = 3;
 let y2 = ++x2;
-console.log(x2,y2)
+console.log(x2, y2)
 
 
 // THE ... OPERATOR 
@@ -109,30 +109,30 @@ console.log(x2,y2)
 // THIS IS REST PARAMETERS
 
 
-function abcd(a,b,c, ...val) {
-    console.log(a,b,c,val)
+function abcd(a, b, c, ...val) {
+    console.log(a, b, c, val)
 }
 
-abcd(1,2,3,4,5,6);
+abcd(1, 2, 3, 4, 5, 6);
 
 
 function getScore(...scores) {
     let total = 0;
     scores.forEach(function (val) {
-         console.log(val)
+        console.log(val)
         total += val;
     });
     return total;
 }
 
-console.log(getScore(10,12,14,18));
+console.log(getScore(10, 12, 14, 18));
 
 
 // EARLY RETURN PATTERN
 
 function checkAge(age) {
-    
-    if (age<18) return "Too Young"; return "Allowed"
+
+    if (age < 18) return "Too Young"; return "Allowed"
 
 }
 
@@ -150,11 +150,11 @@ console.log(f());
 // HIGHER ORDER FUNCTION
 
 // function xyz(val) {
-    
+
 // }
 
 // xyz(function() {
-    
+
 // })
 
 // CLOSURE
@@ -170,5 +170,26 @@ console.log(f());
 // IIFE 
 
 (function () {
-    let score = 0 ;
+    let score = 0;
 })();
+
+
+
+// ARRAYS
+
+let arr = [1, 2, 3, 4]
+arr.pop()
+arr.push(34)
+
+arr.shift();
+console.log(arr)
+arr.unshift(1);
+console.log(arr)
+
+arr.splice(2, 2); // THIS CHANGES THE ORIGINAL ARRAY
+console.log(arr)
+
+
+arr.slice(2, 1); // THIS DOES NOT CHANGE THE ORIGINAL ARRAY
+console.log(arr)
+
