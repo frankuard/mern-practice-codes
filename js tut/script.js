@@ -256,3 +256,7 @@ let obj = {
 
 let obj2 = JSON.parse(JSON.stringify(obj))
 obj2.address.city = "Kathmandu";
+
+// OPTIONAL CHANING
+
+obj?.addresses?.city
