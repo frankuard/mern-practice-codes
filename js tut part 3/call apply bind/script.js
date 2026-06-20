@@ -25,3 +25,17 @@ fnc(); // The obj becomes the main one
 
 
 
+
+const userManager = {
+
+    users : [],
+    init: function () { alert(); },
+    addUser: function () {},
+    removeUser: function () {},
+
+}
+
+
+userManager.init()
+
+
