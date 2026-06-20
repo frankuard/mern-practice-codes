@@ -25,16 +25,28 @@ fnc(); // The obj becomes the main one
 
 
 let form  = document.querySelector("form");
+let name = document.querySelector("#name");
+let bio = document.querySelector("#bio");
+let email = document.querySelector("#email");
 
 const userManager = {
 
     users : [],
     init: function () { form.addEventListener("submit", this.submitForm.bind(this))},
     submitForm:  function (e) {
-        e.preventDefault(),
-        console.log("Form Submitted!")
+        e.preventDefault();
+        this.addUser();
     },
-    addUser: function () {},
+    addUser: function () {
+        this.users.push({
+            username : name.value,
+            bio : bio.value,
+            email : email.value,
+
+        })
+
+        form.reset();
+    },
     removeUser: function () {},
 
 }
