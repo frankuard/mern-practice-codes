@@ -55,3 +55,31 @@ TakeProfile("Roshan", function (Data) {
 
 
 
+// Promises
+// They will either rejet, resolve prmose
+
+
+let pr = new Promise(function(res,rej) {
+    setTimeout(() => {
+        let rn  = Math.floor(Math.random() * 10);
+        if (rn>5){
+            res("Resolved wíth " + rn)
+            res(rn)
+        }
+        else{
+            rej("Rejected with " + rn)
+            rej(rn);
+            
+        }
+    }, 5000);
+}) 
+
+// .then // resolve 
+// .catch // reject
+
+pr.then(function (val) {  //
+    console.log(val);  // if resolved this works
+}).catch(function (val) {
+    console.log(val);  // if rejected this runs
+})
+
