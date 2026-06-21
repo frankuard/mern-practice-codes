@@ -220,21 +220,21 @@ let newAns = ans.reduce(function (accumulator, val) {
 
 let array1 = [1, 2, 3, 4, 5]
 
-let newArray  = [...array1]; // THIS IS USED TO COPY INSTEAD OF REFERENCE
+let newArray = [...array1]; // THIS IS USED TO COPY INSTEAD OF REFERENCE
 
 
 // MERGING TWO ARRAY WITH SPREAD OPERATOR
 
-let m = [1,2];
-let n = [3,4];
+let m = [1, 2];
+let n = [3, 4];
 
-let p = [...m,...n]
+let p = [...m, ...n]
 
 
 // ADD NEPAL TO THE START OF THIS ARRAY USING SPREAD
 
-let countries = ["USA","UK"]
-countries = ["Nepal",...countries]
+let countries = ["USA", "UK"]
+countries = ["Nepal", ...countries]
 
 
 
@@ -247,7 +247,7 @@ let obj = {
     name: "roshan",
     age: 18,
     email: "test@test.com",
-    address:{
+    address: {
         city: "biratnagar"
     },
     [role]: 'roshan'
@@ -266,7 +266,5 @@ obj2.address.city = "Kathmandu";
 // OPTIONAL CHANING
 
 obj?.addresses?.city
-
-
 
 

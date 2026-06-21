@@ -52,6 +52,6 @@ const userManager = {
 }
 
 
-userManager.init()
+userManager.init();
 
 
