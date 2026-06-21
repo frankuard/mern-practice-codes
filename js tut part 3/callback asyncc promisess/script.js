@@ -71,15 +71,32 @@ let pr = new Promise(function(res,rej) {
             rej(rn);
             
         }
-    }, 5000);
+    }, 1000);
 }) 
 
 // .then // resolve 
 // .catch // reject
 
-pr.then(function (val) {  //
-    console.log(val);  // if resolved this works
-}).catch(function (val) {
-    console.log(val);  // if rejected this runs
-})
+// pr.then(function (val) {  //
+//     console.log(val);  // if resolved this works
+// }).catch(function (val) {
+//     console.log(val);  // if rejected this runs
+// })
 
+
+// Async Await
+
+
+async function abcd() {
+    try {
+        
+        let val =  await pr;
+        console.log(val);
+    }
+    catch (err) {
+        console.log(err)
+    }
+
+}
+
+abcd();
