@@ -1,6 +1,6 @@
 // Classes and Objects
 
-function createPencil(name,price,color,company) {
+function CreatePencil(name,price,color,company) {
     this.Realname  = name;
     this.Realprice = price;
     this.Realnamecolor = color;
