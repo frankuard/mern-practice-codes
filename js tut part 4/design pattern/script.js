@@ -27,3 +27,6 @@ let Bank = (function () {
 })();
 
 Bank.withdraw(11000)
+
+
+// Factory Function
