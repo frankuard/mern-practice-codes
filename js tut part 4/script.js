@@ -20,7 +20,10 @@ let Bank = (function () {
         }
     }
 
-    return {checkBalance, setBalance, withdraw}
+    return {
+        check: checkBalance,  // Adding the name to be sent as is the difference between module revealing pattern and reve
+        set: setBalance, 
+        draw: withdraw}
 })();
 
 Bank.withdraw(11000)
