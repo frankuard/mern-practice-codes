@@ -9,4 +9,4 @@ const int = setInterval(() => {
         clearInterval(int);
         console.log("Finished!!")
     }
- }, 1000); 
+ }, 1000);  
