@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lazy Loading</title>
+    <style>
+        img {
+            display: block;
+            margin: 100vh auto;
+            width: 400px;
+            height: 250px;
+        }
+
+        .lazy-img {
+            opacity: 0;
+        }
+
+        .lazy-img.loaded {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img class="lazy-img" data-src="https://picsum.photos/400/250?random=1">
+
+    <img class="lazy-img" data-src="https://picsum.photos/400/250?random=2">
+
+    <img class="lazy-img" data-src="https://picsum.photos/400/250?random=3">
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
