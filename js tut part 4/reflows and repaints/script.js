@@ -10,3 +10,4 @@ for (let i = 0; i < 100; i++) {
 
 ul.appendChild(space);
 
+// We use document fragment to send the data into the memory so it dosent refresh DOM each time it is appending the values 
