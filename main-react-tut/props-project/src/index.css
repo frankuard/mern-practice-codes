@@ -13,13 +13,13 @@ body {
 
 
 .parent {
-
-  height: 100vh;
+  min-height: 100vh;
+  
   width: 100%;
   background-color: black;
   padding: 30px;
   display: flex;
-  
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -70,9 +70,7 @@ transition: 0.3s ease-in-out;
 
 }
 
-.center {
-  
-}
+
 
 .center h3{
   font-size: 17px;
@@ -81,7 +79,7 @@ transition: 0.3s ease-in-out;
 }
 
 .center h3 span{
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 400;
   color: #8b8b8b;
 }
