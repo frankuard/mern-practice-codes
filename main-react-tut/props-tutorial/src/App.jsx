@@ -9,6 +9,10 @@ const App = () => {
     <Card user="Fyodor" image="https://m.media-amazon.com/images/I/613ONLBRGNL._AC_UF1000,1000_QL80_.jpg"/>
 
     <Card user="Fredrich" image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFJ_Q_E5RnYDeVAeeKBJ3WD9crpkAc8VV5pJxpFCFKdGySd7K9l1w7aF3FYMGCqoFoYMKhgWc7R_xZwjsO13vVS7YPHYSgqYYmKE3KwA&s=10"/>
+   
+   <Card image="dg" object= "Diya"/>
+
+
     </div>
   )
 }
