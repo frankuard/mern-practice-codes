@@ -10,6 +10,7 @@ app.use(express.json());
 const notes = [
 
 ]
+// POST
 
 app.post('/notes',(req,res) =>{
 
@@ -21,6 +22,7 @@ app.post('/notes',(req,res) =>{
 // NOTE: The HTTP/ REST APIS Methods are from frontend perspective and not server i.e. the GET means frontend gets the data from server and POST means the frontend posts the data to backend
 
 
+// GET
 app.get('/notes',(req,res) =>{
 
     res.status(200).json({
@@ -28,6 +30,19 @@ app.get('/notes',(req,res) =>{
         notes: notes
     })
 })
+
+// DELETE
+
+app.delete('/notes/:index',(req,res) =>{
+
+    const index = req.params.index
+
+    delete notes[index]
+    res.status(200).json({
+        message: "Note Deleted Succesfully",
+    })
+})
+
 
 
 module.exports = app
