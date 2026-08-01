@@ -21,4 +21,13 @@ app.post('/notes',(req,res) =>{
 // NOTE: The HTTP/ REST APIS Methods are from frontend perspective and not server i.e. the GET means frontend gets the data from server and POST means the frontend posts the data to backend
 
 
+app.get('/notes',(req,res) =>{
+
+    res.status(200).json({
+        message: "Notes Fetched Succesfully",
+        notes: notes
+    })
+})
+
+
 module.exports = app
