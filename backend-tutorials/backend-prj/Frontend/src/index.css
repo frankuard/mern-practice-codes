@@ -93,3 +93,7 @@ html{
 .post-card h3 {
   margin-bottom: 10px;
 }
+
+.post-card p {
+  color: black;
+}
