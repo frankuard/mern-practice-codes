@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getMe, logout, logoutAll, refreshToken, register } from "../controllers/auth.controller.js";
+import { getMe, login, logout, logoutAll, refreshToken, register } from "../controllers/auth.controller.js";
 
 const authRouter = Router();
 
@@ -7,6 +7,12 @@ const authRouter = Router();
  * POST /api/auth/register
  */
 authRouter.post("/register", register);
+
+/**
+ * POST /api/auth/login
+ */
+
+authRouter.post("/login",login);
 
 /**
  * Get /api/auth/get-me
