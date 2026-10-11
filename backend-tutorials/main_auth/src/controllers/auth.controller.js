@@ -146,7 +146,7 @@ export async function refreshToken(req, res) {
 
     session.refreshTokenHash = newRefreshToken;
     await session.save();
-    
+
 
   res.status(200).json({
     message: "Access token refreshed successfully",
@@ -184,5 +184,33 @@ export async function logout(req,res) {
 
   res.status(200).json({
     message:"Logged out succesfully"
+  })
+}
+
+export async function logoutAll(req,res) {
+
+  const refreshToken = req.cookies.refreshToken
+
+  if (!refreshToken){
+    return res.status(400).json({
+      message: "Refresh token not found"
+    })
+    
+  }
+
+
+  const decoded = jet.verify(refreshToken,config.JWT_SECRET)
+
+  await sessionModel.updateMany({
+    user:decoded.id,
+    revoked:false
+  },{
+    revoked:true
+  })
+
+  res.clearCookie("refreshToken")
+
+  res.status(200).json({
+    message:"Logged out from all devices sucessfully"
   })
 }
